@@ -34,7 +34,7 @@ const Track = ({ music, playing, setPlaying, selectedHowl, setSelectedHowl, isFi
   }
 
   return (
-    <div onClick={togglePlay} className="grid grid-cols-player mx-auto px-4 py-2 rounded-sm transition-colors cursor-pointer text-white">
+    <div onClick={togglePlay} className="grid grid-cols-player mx-auto px-4 py-2 rounded-sm transition-colors cursor-pointer text-white hover:bg-zinc-800">
       <div className="col-span-1 flex items-center">
         {selectedHowl === howl && playing ? (<BsPauseFill size='20px' />) :
           (<BsPlayFill size='20px' />)}
