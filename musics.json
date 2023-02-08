@@ -1,0 +1,29 @@
+[
+  {
+    "id": "1",
+    "url": "/audios/AvengedSevenfold.mp3",
+    "title": "A Little Piece Of Heaven",
+    "artist": "A7X",
+    "album": "Avenged Sevenfold",
+    "cover": "https://i.ytimg.com/vi/qlYAAibVTnU/maxresdefault.jpg",
+    "duration": "8:11"
+  },
+  {
+    "id": "2",
+    "url": "/audios/Ghostsmane.mp3",
+    "title": "Mercury",
+    "artist": "GhostMane",
+    "album": "Mercury",
+    "cover": "https://i.ytimg.com/vi/31j4DIpgY9U/maxresdefault.jpg",
+    "duration": "2:05"
+  },
+  {
+    "id": "3",
+    "url": "/audios/Nosstress.mp3",
+    "title": "Pegang Tanganku",
+    "artist": "Nosstress",
+    "album": "Pegang Tanganku",
+    "cover": "https://i.ytimg.com/vi/E863QaDWgPc/maxresdefault.jpg",
+    "duration": "5:08"
+  }
+]
