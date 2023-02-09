@@ -8,7 +8,7 @@ const Track = ({ music, playing, setPlaying, selectedHowl, setSelectedHowl, isFi
   useEffect(() => {
     const newHowl = new Howl({
       src: [music.url],
-      loop: true,
+      loop: false,
       autoplay: false,
     })
 
@@ -34,18 +34,18 @@ const Track = ({ music, playing, setPlaying, selectedHowl, setSelectedHowl, isFi
   }
 
   return (
-    <div onClick={togglePlay} className="grid grid-cols-player mx-auto px-4 py-2 rounded-sm transition-colors cursor-pointer text-white hover:bg-zinc-800">
-      <div className="col-span-1 flex items-center">
+    <div onClick={togglePlay} className="grid grid-cols-player mx-auto px-2 py-2 rounded-sm transition-colors cursor-pointer text-white hover:bg-zinc-800">
+      <div className="col-span-1 flex items-center justify-start">
         {selectedHowl === howl && playing ? (<BsPauseFill size='20px' />) :
           (<BsPlayFill size='20px' />)}
         <img src={music.cover} className="w-10 h-10 ml-2" />
       </div>
 
-      <div className="col-span-5 flex flex-col items-start justify-start">
+      <div className="col-span-5 flex flex-col items-start text-sm">
         <span className="font-semibold">{music.title}</span>
         <span>{music.artist}</span>
       </div>
-      <div className="col-span-5 flex items-center justify-start">{music.album}</div>
+      <div className="col-span-5 flex items-center justify-start text-sm">{music.album}</div>
       <div className="col-span-1 flex items-center justify-start">{music.duration}</div>
     </div>
   )
